@@ -1,8 +1,6 @@
-import { Router } from 'express';
+import { expressRouter } from '../../utils';
 import helloRoutes from './hello';
 
-const router = Router();
+expressRouter.use('/hello', helloRoutes);
 
-router.use('/hello', helloRoutes);
-
-export default router;
+export default expressRouter;
