@@ -2,9 +2,9 @@ import express from "express";
 import helmet from "helmet";
 import compression from "compression";
 import cors from "cors";
-import routes from "./routes/v1";
+import routes from "../routes/v1";
 
-export const app = express();
+const app = express();
 
 // set security HTTP headers
 app.use(helmet());

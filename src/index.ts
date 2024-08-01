@@ -1,6 +1,5 @@
-import app from './app';
-import { config  } from './config';
+import api from './api';
+import scheduledTasks from './scheduled-tasks';
 
-app.listen(config.PORT, () => {
-  console.info(`Listening to port ${config.PORT}`);
-});
+api();
+scheduledTasks();
