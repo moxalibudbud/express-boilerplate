@@ -23,6 +23,22 @@
       "args": [
         "${workspaceFolder}/dist/index.js"
       ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "TS Jest Debugger",
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+      "args": [
+        "--runInBand",
+        "--config",
+        "${workspaceFolder}/jest.config.js",
+        "${workspaceFolder}/tests/unit/date.test.ts" // To test specific file
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"], // Adjust this if your compiled output directory is different
+      "skipFiles": ["<node_internals>/**", "**/node_modules/**"]
     }
   ]
 }
