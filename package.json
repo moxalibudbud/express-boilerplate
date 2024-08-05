@@ -25,17 +25,23 @@
     "http-status": "^1.7.4",
     "http-status-codes": "^2.3.0",
     "lodash": "^4.17.21",
+    "moment-timezone": "^0.5.45",
     "parser": "^0.1.4"
   },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@types/compression": "^1.7.5",
     "@types/cookie-parser": "^1.4.7",
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.7",
     "@types/node": "^22.0.2",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.4",
+    "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "tslib": "^2.6.3",
     "typescript": "^5.5.4"
   }
