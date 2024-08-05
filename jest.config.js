@@ -6,11 +6,9 @@ module.exports = {
     '^@api/(.*)$': '<rootDir>/src/api/$1',
     '^@api$': '<rootDir>/src/api',
     '^@utils/(.*)$': '<rootDir>/src/utils/$1',
-    '^@util$': '<rootDir>/src/util'
+    '^@utils$': '<rootDir>/src/utils'
   },
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.json',
-    },
-  },
+  transform: {
+    '^.+\\.ts?$': ['ts-jest', { tsconfig: 'tsconfig.json' }],
+  }
 };

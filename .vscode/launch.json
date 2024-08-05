@@ -27,13 +27,13 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "TS Jest Debugger",
+      "name": "TS Jest Singel File Debugger",
       "program": "${workspaceFolder}/node_modules/jest/bin/jest",
       "args": [
+        "${relativeFile}",
         "--runInBand",
         "--config",
-        "${workspaceFolder}/jest.config.js",
-        "${workspaceFolder}/tests/unit/date.test.ts" // To test specific file
+        "${workspaceFolder}/jest.config.ts"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",

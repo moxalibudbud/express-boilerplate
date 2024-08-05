@@ -1,5 +1,8 @@
 import { test, expect } from '@jest/globals';
+import date from '@utils/date';
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(3).toBe(3);
+test('Test date helper', () => {
+  const year = date('2024', 'YYYY').format('YYYY');
+  expect(year).toBe('2024');
 });
+

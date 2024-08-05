@@ -28,7 +28,8 @@
     }
   },
   "include": [
-    "src/**/*.ts"
+    "src/*",
+    "tests/*"
   ],
   "exclude": [],
   "ts-node": {
