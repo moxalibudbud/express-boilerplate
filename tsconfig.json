@@ -17,10 +17,22 @@
     ],
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "paths": {
+      "@api/*": ["./src/api/*"],
+      "@api": ["./src/api"],
+      "@utils/*": ["./src/utils/*"],
+      "@utils": ["./src/utils"],
+      "@scheduled-tasks/*": ["./src/scheduled-tasks/*"],
+      "@scheduled-tasks": ["./src/scheduled-tasks"]
+    }
   },
   "include": [
     "src/**/*.ts"
   ],
-  "exclude": []
+  "exclude": [],
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": ["tsconfig-paths/register"]
+  }
 }

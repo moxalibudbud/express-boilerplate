@@ -1,5 +1,5 @@
-import api from './api';
-import scheduledTasks from './scheduled-tasks';
+import api from '@api';
+import scheduledTasks from '@scheduled-tasks';
 
 api();
 scheduledTasks();
