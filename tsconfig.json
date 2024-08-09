@@ -28,8 +28,8 @@
     }
   },
   "include": [
-    "src/*",
-    "tests/*"
+    "src/**/*",
+    "tests/**/*"
   ],
   "exclude": [],
   "ts-node": {

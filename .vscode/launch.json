@@ -33,7 +33,7 @@
         "${relativeFile}",
         "--runInBand",
         "--config",
-        "${workspaceFolder}/jest.config.ts"
+        "${workspaceFolder}/jest.config.js"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
